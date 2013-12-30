@@ -11,11 +11,11 @@
     
   }
   
-  function bracketPaste() {
+  /*function bracketPaste() {
     node_copy_paste.paste(function (e, content) {
       domainManager.emitEvent('clipboard', 'paste', {'content': content});
     });
-  }
+  }*/
   
   function bracketCopy(userSelection) {
     node_copy_paste.copy(userSelection);
@@ -26,7 +26,7 @@
       DomainManager.registerDomain('clipboard', {major: 0, minor: 1});
     }
     
-    DomainManager.registerCommand(
+    /*DomainManager.registerCommand(
       'clipboard',    // domain name
       'callPaste',    // command name
       bracketPaste,   // command handler function
@@ -34,7 +34,7 @@
       'Pastes the contents of the users clipboard',
       [],
       [{name: 'clipboardContent', type: 'string', description: 'the contents of the clipboard'}]
-    );
+    );*/
     
     DomainManager.registerCommand(
       'clipboard',    // domain name

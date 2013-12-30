@@ -76,16 +76,16 @@ define(function (require, exports, module) {
     }
   }
   
-  function paste() {
+  /*function paste() {
     if (_done) {
       return nodeConnection.domains.clipboard.callPaste();
     }
-  }
+  }*/
   
   AppInit.appReady(_appReady);
   
   exports.done = done;
   exports.copy = copy;
-  exports.paste = paste;
+  //exports.paste = paste;
   
 });
