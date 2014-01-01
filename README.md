@@ -13,5 +13,4 @@ Right click on a file in the left sidebar panel and select "_X_ to clipboard" or
 
 - The extension is similar to Notepad++'s functionality.
 - Uses copy/paste library from:
- - https://github.com/jbardnz/RightClickExtended
  - https://github.com/xavi-/node-copy-paste

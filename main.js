@@ -8,18 +8,18 @@ define(function (require, exports, module) {
       Menus          = brackets.getModule('command/Menus'),
       ProjectManager = brackets.getModule('project/ProjectManager'),
       
-      clipboard = require('clipboard'),
+      fileInfoToClipboard = require('FileInfoToClipboard'),
       
-      CID_FILENAME = 'ToClipboard.FileName',
-      CID_FILEPATH = 'ToClipboard.FilePath',
-      CID_DIRPATH  = 'ToClipboard.DirPath',
+      CID_FILENAME = 'FileInfoToClipboard.FileName',
+      CID_FILEPATH = 'FileInfoToClipboard.FilePath',
+      CID_DIRPATH  = 'FileInfoToClipboard.DirPath',
       
       WorkingSetMenu = Menus.getContextMenu(Menus.ContextMenuIds.WORKING_SET_MENU),
       ProjectMenu    = Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU),
       FileMenu       = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
   
   function _copy(text) {
-    return clipboard.copy(text);
+    return fileInfoToClipboard.copy(text);
   }
   
   function _selectedFile() {
@@ -44,7 +44,7 @@ define(function (require, exports, module) {
   
   console.log('[FileInfo-ToClipboard] ...loading node module (menus disabled)');
   
-  clipboard.done(function () {
+  fileInfoToClipboard.done(function () {
     console.log('[FileInfo-ToClipboard] node module loading complete (menus enabled)');
     
     CommandManager.get(CID_FILENAME).setEnabled(true);

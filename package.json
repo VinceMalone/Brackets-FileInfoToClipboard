@@ -1,9 +1,9 @@
 {
     "name": "vmalone.fileinfo-toclipboard",
     "title": "File Info to Clipboard",
+    "version": "1.1.0",
     "description": "Copy name, path and directory path of a file to the clipboard.",
     "homepage": "https://github.com/VinceMalone/Brackets-FileInfoToClipboard",
-    "version": "1.0.1",
     "author": "Vince Malone <vince.t.malone@gmail.com>",
     "license": "MIT",
     "engines": {
