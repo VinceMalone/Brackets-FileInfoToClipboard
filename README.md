@@ -1,5 +1,4 @@
-File Info to Clipboard
-===============
+# File Info to Clipboard [![Analytics](https://ga-beacon.appspot.com/UA-46804594-1/Brackets-FileInfoToClipboard/readme?pixel)](https://github.com/igrigorik/ga-beacon)
 
 Adds options to copy a file's - name, path, and directory path - to the clipboard.
 
